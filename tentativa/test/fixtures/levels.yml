@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  maxLevel: 1.5
+  baseExp: 1.5
+  levelUpPercent: 1.5
+
+two:
+  maxLevel: 1.5
+  baseExp: 1.5
+  levelUpPercent: 1.5

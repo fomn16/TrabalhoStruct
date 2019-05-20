@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  nickname: MyString
+  email: MyString
+  dateOfBirth: 2019-05-20
+  gender: one
+  level: 1.5
+  group: one
+  birthLocation: MyString
+  coins: 1.5
+
+two:
+  name: MyString
+  nickname: MyString
+  email: MyString
+  dateOfBirth: 2019-05-20
+  gender: two
+  level: 1.5
+  group: two
+  birthLocation: MyString
+  coins: 1.5
