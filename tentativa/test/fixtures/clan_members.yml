@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  isLeager: false
+  acceptedInvite: false
+
+two:
+  user: two
+  isLeager: false
+  acceptedInvite: false

@@ -10,7 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_20_162847) do
+ActiveRecord::Schema.define(version: 2019_05_20_164552) do
+
+  create_table "clan_members", force: :cascade do |t|
+    t.integer "user_id"
+    t.boolean "isLeager"
+    t.boolean "acceptedInvite"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_clan_members_on_user_id"
+  end
+
+  create_table "clans", force: :cascade do |t|
+    t.string "name"
+    t.date "deadline"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "genders", force: :cascade do |t|
     t.string "name"
@@ -20,6 +36,21 @@ ActiveRecord::Schema.define(version: 2019_05_20_162847) do
 
   create_table "groups", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "habilities", force: :cascade do |t|
+    t.string "name"
+    t.float "dmgPercent"
+    t.float "defPercent"
+    t.float "maxHabilityLevel"
+    t.float "minUserLevel"
+    t.float "extraDmgPercent"
+    t.float "extraDefPercent"
+    t.float "levelsForUpgrade"
+    t.string "habilityClass"
+    t.string "habilitySubclass"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -38,6 +69,16 @@ ActiveRecord::Schema.define(version: 2019_05_20_162847) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["group_id"], name: "index_sub_groups_on_group_id"
+  end
+
+  create_table "user_habilities", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "hability_id"
+    t.float "habilityLevel"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["hability_id"], name: "index_user_habilities_on_hability_id"
+    t.index ["user_id"], name: "index_user_habilities_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

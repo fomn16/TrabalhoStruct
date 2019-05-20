@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  hability: one
+  habilityLevel: 1.5
+
+two:
+  user: two
+  hability: two
+  habilityLevel: 1.5

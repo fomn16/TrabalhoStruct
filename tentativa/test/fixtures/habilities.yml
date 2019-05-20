@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dmgPercent: 1.5
+  defPercent: 1.5
+  maxHabilityLevel: 1.5
+  minUserLevel: 1.5
+  extraDmgPercent: 1.5
+  extraDefPercent: 1.5
+  levelsForUpgrade: 1.5
+  habilityClass: MyString
+  habilitySubclass: MyString
+
+two:
+  name: MyString
+  dmgPercent: 1.5
+  defPercent: 1.5
+  maxHabilityLevel: 1.5
+  minUserLevel: 1.5
+  extraDmgPercent: 1.5
+  extraDefPercent: 1.5
+  levelsForUpgrade: 1.5
+  habilityClass: MyString
+  habilitySubclass: MyString
