@@ -1,0 +1,8 @@
+<p>Usuários cadastrados:</p>
+
+<%@users.each do |user|%>
+	<%=user.name%>
+	<%=link_to 'Ver', user_path(user.id), method: :get%><br/>
+<%end%>
+
+<%=link_to 'Cadastrar novo usuário', new_user_url, method: :get%>

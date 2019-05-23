@@ -1,0 +1,9 @@
+<p>Generos cadastrados:</p>
+
+<%@genders.each do |gender|%>
+	<%=gender.name%>
+	<%= link_to 'Apagar', gender_path(gender.id), method: :delete%>
+	<%= link_to 'Editar', edit_gender_url(gender.id)%><br/>
+<%end%>
+
+<%= link_to 'Cadastrar novo genero', new_gender_url, method: :get%>

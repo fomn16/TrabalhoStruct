@@ -1,0 +1,2 @@
+class HabilitiesController < ApplicationController
+end

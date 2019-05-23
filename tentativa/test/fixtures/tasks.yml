@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  user: one
+  xp: 1.5
+  coins: 1.5
+  taskStatus: 
+  deadline: 2019-05-20 13:59:03
+  taskClass: one
+
+two:
+  title: MyString
+  description: MyText
+  user: two
+  xp: 1.5
+  coins: 1.5
+  taskStatus: 
+  deadline: 2019-05-20 13:59:03
+  taskClass: two

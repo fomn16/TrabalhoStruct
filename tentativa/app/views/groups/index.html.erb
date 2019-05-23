@@ -1,0 +1,9 @@
+<p>Grupos cadastrados:</p>
+
+<%@groups.each do |group|%>
+	<%=group.name%>
+	<%=link_to 'Apagar', group_path(group.id), method: :delete%>
+	<%=link_to 'Editar', edit_group_url(group.id)%><br/>
+<%end%>
+
+<%=link_to 'Cadastrar novo grupo', new_group_url, method: :get%>
