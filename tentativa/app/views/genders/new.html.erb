@@ -1,5 +1,5 @@
 <%=form_with scope: :gender, url: genders_path, local: true do |f|%>
-	<%=f.text_field :name%>
 	<%=f.label :name, 'Genero'%><br/>
+	<%=f.text_field :name%><br/>
 	<%=f.submit 'Enviar'%>
 <%end%>

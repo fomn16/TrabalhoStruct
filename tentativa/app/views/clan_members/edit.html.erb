@@ -1,0 +1,11 @@
+<%= form_with scope: :clan_member, url: clan_member_path, method: :patch, local: true do |f|%>
+	<%=f.label :user_id, 'Usuário'%><br/>
+	<%=f.select :user_id, @user%><br/>
+	<%=f.label :clan_id, 'Clan'%><br/>
+	<%=f.select :clan_id, @clan%><br/>
+	<%=f.label :isLeager, 'É lider do clan'%><br/>
+	<%=f.check_box :isLeager%><br/>
+	<%=f.label :acceptedInvite, 'Aceitou o convite'%><br/>
+	<%=f.check_box :acceptedInvite%><br/>
+	<%=f.submit 'Enviar'%>
+<%end%>

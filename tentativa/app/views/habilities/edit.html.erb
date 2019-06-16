@@ -1,0 +1,23 @@
+<%=form_with scope: :hability, url: hability_path, method: :patch, local: true do |f|%>
+	<%=f.text_field :name%>
+	<%=f.label :name, 'Nome da habilidade'%><br/>
+	<%=f.text_field :dmgPercent%>
+	<%=f.label :dmgPercent, 'Porcentagem de dano'%><br/>
+	<%=f.text_field :defPercent%>
+	<%=f.label :defPercent, 'Porcentagem de defesa'%><br/>
+	<%=f.text_field :maxHabilityLevel%>
+	<%=f.label :maxHabilityLevel, 'Nível máximo da habilidade'%><br/>
+	<%=f.text_field :minUserLevel%>
+	<%=f.label :minUserLevel, 'Nível mínimo do usuário'%><br/>
+	<%=f.text_field :extraDmgPercent%>
+	<%=f.label :extraDmgPercent, 'Incremento de dano por upgrade'%><br/>
+	<%=f.text_field :extraDefPercent%>
+	<%=f.label :extraDefPercent, 'Incremento de defesa por upgrade'%><br/>
+	<%=f.text_field :levelsForUpgrade%>
+	<%=f.label :levelsForUpgrade, 'Níveis necessários para um upgrade'%><br/>
+	<%=f.text_field :habilityClass%>
+	<%=f.label :habilityClass, 'Classe da habilidade'%><br/>
+	<%=f.text_field :habilitySubclass%>
+	<%=f.label :habilitySubclass, 'Subclasse da habilidade'%><br/>
+	<%=f.submit 'Enviar'%>
+<%end%>

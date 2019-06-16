@@ -1,0 +1,16 @@
+<p>Dados da habilidade:</p>
+
+<p>nome: <%=@hability.name%></p>
+<p>Porcentagem de dano: <%=@hability.dmgPercent%></p>
+<p>Porcentagem de defesa: <%=@hability.defPercent%></p>
+<p>Nível máximo da habilidade: <%=@hability.maxHabilityLevel%></p>
+<p>Nível mínimo do usuário: <%=@hability.minUserLevel%></p>
+<p>Incremento de dano por upgrade: <%=@hability.extraDmgPercent%></p>
+<p>Incremento de defesa por upgrade: <%=@hability.extraDefPercent%></p>
+<p>Níveis necessários para um upgrade: <%=@hability.levelsForUpgrade%></p>
+<p>Classe da habilidade: <%=@hability.habilityClass%></p>
+<p>Subclasse da habilidade: <%=@hability.habilitySubclass%></p>
+
+<%=link_to 'Apagar habilidade', hability_path(@hability.id), method: :delete%>
+<%=link_to 'Editar habilidade', edit_hability_url(@hability.id)%>
+<%=link_to 'Voltar', habilities_path%>

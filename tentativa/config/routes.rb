@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   resources :groups
   resources :users
   resources :habilities
+  resources :clans
+  resources :clan_members
+  resources :main
+  root 'main#index'
 end

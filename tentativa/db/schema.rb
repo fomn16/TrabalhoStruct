@@ -10,14 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_21_131710) do
+ActiveRecord::Schema.define(version: 2019_06_12_123324) do
 
   create_table "clan_members", force: :cascade do |t|
     t.integer "user_id"
+    t.integer "clan_id"
     t.boolean "isLeager"
     t.boolean "acceptedInvite"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["clan_id"], name: "index_clan_members_on_clan_id"
     t.index ["user_id"], name: "index_clan_members_on_user_id"
   end
 
@@ -145,4 +147,5 @@ ActiveRecord::Schema.define(version: 2019_05_21_131710) do
     t.index ["gender_id"], name: "index_users_on_gender_id"
     t.index ["group_id"], name: "index_users_on_group_id"
   end
+
 end

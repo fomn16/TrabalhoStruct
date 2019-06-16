@@ -1,0 +1,11 @@
+<p>Dados do membro de clan:<p/><br/>
+<p>Nome do usuário:<%=@userName%></p>
+<p>id do usuário:<%=@cmbs.user_id%></p>
+<p>Nome do clan:<%=@clanName%></p>
+<p>id do clan:<%=@cmbs.clan_id%></p>
+<p>é lider:<%=@cmbs.isLeager%></p>
+<p>aceitou convite:<%=@cmbs.acceptedInvite%></p>
+
+<%=link_to 'Editar membro de clan', edit_clan_member_url(@cmbs.id), method: :get%>
+<%=link_to 'Apagar membro de clan', clan_member_path(@cmbs.id), method: :delete%><br/>
+<%=link_to 'Voltar', users_path%>

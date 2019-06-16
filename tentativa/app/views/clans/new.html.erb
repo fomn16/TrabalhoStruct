@@ -1,0 +1,7 @@
+<%= form_with scope: :clan, url: clans_path, local: true do |f|%>
+	<%=f.label :name, 'Nome'%><br/>
+	<%=f.text_field :name%><br/>
+	<%=f.label :deadline, 'Data de expiração'%><br/>
+	<%=f.date_field :deadline%><br/>
+	<%=f.submit 'Enviar'%>
+<%end%>

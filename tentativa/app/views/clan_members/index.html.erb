@@ -1,0 +1,9 @@
+<p>Membros de clans cadastrados:</p>
+
+<%@cmbs.each do |cmb|%>
+	<%=@users.find(cmb.user_id).name%>
+	<%=link_to 'Ver', clan_member_path(cmb.id), method: :get%><br/>
+<%end%>
+<br/>
+<%=link_to 'Cadastrar novo membro de clan', new_clan_member_url, method: :get%><br/>
+<%=link_to 'Voltar para a página principal', main_index_url%>
