@@ -9,6 +9,6 @@
 <p>Grupo:<%=@groupName%></p>
 <p>Genero:<%=@genderName%></p>
 
-<%=link_to 'Editar usuário', edit_user_url(@user.id), method: :get%>
-<%=link_to 'Apagar usuário', user_path(@user.id), method: :delete%><br/>
-<%=link_to 'Voltar', users_path%>
+<%=link_to 'Editar usuário', edit_user_url(@user.id), method: :get, :class => "btn btn-primary"%>
+<%=link_to 'Apagar usuário', user_path(@user.id), method: :delete, :class => "btn btn-danger"%><br/>
+<%=link_to 'Voltar', users_path, :class => "btn btn-primary"%>

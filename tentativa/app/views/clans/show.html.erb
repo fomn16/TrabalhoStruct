@@ -2,6 +2,6 @@
 <p>Nome:<%=@clan.name%></p>
 <p>Data de expiração:<%=@clan.deadline%></p>
 
-<%=link_to 'Editar clan', edit_clan_url(@clan.id), method: :get%>
-<%=link_to 'Apagar clan', clan_path(@clan.id), method: :delete%><br/>
-<%=link_to 'Voltar', users_path%>
+<%=link_to 'Editar clan', edit_clan_url(@clan.id), method: :get, :class => "btn btn-primary"%>
+<%=link_to 'Apagar clan', clan_path(@clan.id), method: :delete,  :class => "btn btn-danger"%><br/>
+<%=link_to 'Voltar', users_path,  :class => "btn btn-primary"%>

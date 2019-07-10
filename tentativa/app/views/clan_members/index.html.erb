@@ -1,9 +1,10 @@
-<p>Membros de clans cadastrados:</p>
+<h2>Membros de Clans cadastrados:</h2>
 
 <%@cmbs.each do |cmb|%>
 	<%=@users.find(cmb.user_id).name%>
-	<%=link_to 'Ver', clan_member_path(cmb.id), method: :get%><br/>
+	<%=link_to 'Ver', clan_member_path(cmb.id), method: :get, :class => "btn btn-outline-primary"%><br/>
 <%end%>
 <br/>
-<%=link_to 'Cadastrar novo membro de clan', new_clan_member_url, method: :get%><br/>
-<%=link_to 'Voltar para a página principal', main_index_url%>
+<%=link_to 'Cadastrar novo membro de clan', new_clan_member_url, method: :get, :class => "btn btn-primary"%><br/>
+<div style="padding: 10px 0;">
+<%=link_to 'Voltar para a página principal', main_index_url, :class => "btn btn-primary"%>

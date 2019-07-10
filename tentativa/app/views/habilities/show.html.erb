@@ -11,6 +11,6 @@
 <p>Classe da habilidade: <%=@hability.habilityClass%></p>
 <p>Subclasse da habilidade: <%=@hability.habilitySubclass%></p>
 
-<%=link_to 'Apagar habilidade', hability_path(@hability.id), method: :delete%>
-<%=link_to 'Editar habilidade', edit_hability_url(@hability.id)%>
-<%=link_to 'Voltar', habilities_path%>
+<%=link_to 'Apagar habilidade', hability_path(@hability.id), method: :delete, :class => "btn btn-danger"%>
+<%=link_to 'Editar habilidade', edit_hability_url(@hability.id), :class => "btn btn-primary"%>
+<%=link_to 'Voltar', habilities_path, :class => "btn btn-primary"%>

@@ -2,8 +2,9 @@
 
 <%@clans.each do |clan|%>
 	<%=clan.name%>
-	<%=link_to 'Ver', clan_path(clan.id), method: :get%><br/>
+	<%=link_to 'Ver', clan_path(clan.id), method: :get, :class => "btn btn-outline-primary"%><br/>
 <%end%>
 <br/>
-<%=link_to 'Cadastrar novo clan', new_clan_url, method: :get%><br/>
-<%=link_to 'Voltar para a página principal', main_index_url%>
+<%=link_to 'Cadastrar novo clan', new_clan_url, method: :get, :class => "btn btn-primary"%><br/>
+<div style="padding: 10px 0;">
+<%=link_to 'Voltar para a página principal', main_index_url, :class => "btn btn-primary"%>

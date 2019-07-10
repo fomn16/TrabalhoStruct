@@ -1,8 +1,24 @@
-<p>Página inicial</p>
+<h1 class="text-center">Página inicial</h1>
 
-<%=link_to 'Usuários', users_path%><br/>
-<%=link_to 'Grupos', groups_path%><br/>
-<%=link_to 'Generos', genders_path%><br/>
-<%=link_to 'habilidades', habilities_path%><br/>
-<%=link_to 'clans', clans_path%><br/>
-<%=link_to 'Membors de clans', clan_members_path%><br/>
+<div class="container" style="padding-top: 100px;">
+    <div class="row">
+        <div class="col-2">
+            <%=link_to 'Usuários', users_path, :class => 'btn btn-primary'%><br/>
+        </div>
+        <div class="col-2">
+            <%=link_to 'Grupos', groups_path, :class => 'btn btn-primary'%><br/>
+        </div>
+        <div class="col-2">
+            <%=link_to 'Generos', genders_path, :class => 'btn btn-primary'%><br/>
+        </div>
+        <div class="col-2">
+            <%=link_to 'Habilidades', habilities_path, :class => 'btn btn-primary'%><br/>
+        </div>
+        <div class="col-2">
+            <%=link_to 'Clans', clans_path, :class => 'btn btn-primary'%><br/>
+        </div>
+        <div class="col-2">
+            <%=link_to 'Membors de clans', clan_members_path, :class => 'btn btn-primary'%><br/>
+        </div>
+</div>
+

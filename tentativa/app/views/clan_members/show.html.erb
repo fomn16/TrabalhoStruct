@@ -6,6 +6,6 @@
 <p>é lider:<%=@cmbs.isLeager%></p>
 <p>aceitou convite:<%=@cmbs.acceptedInvite%></p>
 
-<%=link_to 'Editar membro de clan', edit_clan_member_url(@cmbs.id), method: :get%>
-<%=link_to 'Apagar membro de clan', clan_member_path(@cmbs.id), method: :delete%><br/>
-<%=link_to 'Voltar', users_path%>
+<%=link_to 'Editar membro de clan', edit_clan_member_url(@cmbs.id), method: :get, :class => "btn btn-primary"%>
+<%=link_to 'Apagar membro de clan', clan_member_path(@cmbs.id), method: :delete,  :class => "btn btn-danger"%><br/>
+<%=link_to 'Voltar', users_path,  :class => "btn btn-primary"%>
