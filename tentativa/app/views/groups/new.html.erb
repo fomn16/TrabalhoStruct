@@ -1,5 +1,5 @@
 <%=form_with scope: :group, url: groups_path, local: true do |f|%>
 	<%= f.label :name, 'Nome do grupo'%><br/>
 	<%= f.text_field :name%><br/>
-	<%=f.submit 'Enviar'%>
+	<%=f.submit 'Enviar', :class =>"btn btn-success"%>
 <%end%>

@@ -2,9 +2,10 @@
 
 <%@groups.each do |group|%>
 	<%=group.name%>
-	<%=link_to 'Apagar', group_path(group.id), method: :delete%>
-	<%=link_to 'Editar', edit_group_url(group.id)%><br/>
+	<%=link_to 'Apagar', group_path(group.id), method: :delete, :class =>"btn btn-danger"%>
+	<%=link_to 'Editar', edit_group_url(group.id), :class =>"btn btn-primary"%><br/>
 <%end%>
 <br/>
-<%=link_to 'Cadastrar novo grupo', new_group_url, method: :get%><br/>
-<%=link_to 'Voltar para a página principal', main_index_url%>
+<%=link_to 'Cadastrar novo grupo', new_group_url, method: :get, :class =>"btn btn-primary"%><br/>
+<div style="padding: 10px 0;">
+<%=link_to 'Voltar para a página principal', main_index_url, :class =>"btn btn-primary"%>
